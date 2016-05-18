@@ -14,7 +14,8 @@ public class drawingArea
 			//black image icon
 			Icon iconBl = new ImageIcon("Flag_of_Afghanistan_(1880–1901).svg.png");
 			
-			Icon imagee = new ImageIcon("Flaf_of_Taliban_(original).svg.png");
+			//Icon imagee = new ImageIcon("Flag_of_Taliban_(original).svg.png");
+			
 			
 			
 			JFrame frame = new JFrame("Paint It");
@@ -75,7 +76,7 @@ public class drawingArea
 				}
 				
 			});
-			JButton eraserButton = new JButton(imagee);
+			JButton eraserButton = new JButton("Erase");
 			eraserButton.addActionListener(new ActionListener()
 				{
 					public void actionPerformed(ActionEvent e)
@@ -84,7 +85,7 @@ public class drawingArea
 					}
 				});
 			blackButton.setPreferredSize(new Dimension(16, 16));
-			eraserButton.setPreferredSize(new Dimension(16, 16));
+			//eraserButton.setPreferredSize(new Dimension(16, 16));
 			redButton.setPreferredSize(new Dimension(16, 16));
 			blueButton.setPreferredSize(new Dimension(16, 16));
 			greenButton.setPreferredSize(new Dimension(16,16));
@@ -92,9 +93,9 @@ public class drawingArea
 			
 			panel.add(greenButton);
 			panel.add(blueButton);
-			panel.add(eraserButton);
 			panel.add(blackButton);
 			panel.add(redButton);
+			panel.add(eraserButton);
 			panel.add(clearButton);
 			//adds the buttons to the panel
 			
